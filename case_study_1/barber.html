@@ -18,8 +18,8 @@
         <div id="menu-header">
           <div class="menu-icon">
             <i class="ti-menu"></i>
-            <div class="side-nav">
-              <i class="close-icon ti-close"></i>
+            <div class="side-nav js-menu">
+              <i class="close-icon ti-close js-close-btn"></i>
               <ul class="list-items">
                 <li>Home</li>
                 <li>Features</li>
@@ -153,20 +153,28 @@
             </div>
             <div class="col-half contact">
               <p class="header">Get In Touch</p>
-              <p>#30 abc Colony, xyz City IN<i class="footer-icon ti-location-pin"></i></p>
-              <p>example@website.com<i class="footer-icon ti-clip"></i></p>
-              <p>+01 123456789<i class="footer-icon ti-mobile"></i></p>
+              <p>#30A Big Street, New York City<i class="footer-icon ti-location-pin"></i></p>
+              <p>menbarbershop.com<i class="footer-icon ti-clip"></i></p>
+              <p>+03 31031996<i class="footer-icon ti-mobile"></i></p>
             </div>
           </div>
         </div>
         <div id="social">
-          <a href="https://www.facebook.com/"><i class="ti-facebook"></i></a>
-          <a href="https://www.instagram.com/"><i class="ti-instagram"></i></a>
-          <a href="https://twitter.com/?lang=vi"><i class="ti-twitter"></i></a>
-          <a href="https://www.youtube.com/"><i class="ti-youtube"></i></a>
+          <a href="https://www.facebook.com/" target="_blank"><i class="ti-facebook"></i></a>
+          <a href="https://www.instagram.com/" target="_blank"><i class="ti-instagram"></i></a>
+          <a href="https://twitter.com/?lang=vi" target="_blank"><i class="ti-twitter"></i></a>
+          <a href="https://www.youtube.com/" target="_blank"><i class="ti-youtube"></i></a>
           <p>Coppy Right Easy Youtube Channel</p>
         </div>
       </div>
     </div>
+    <script>
+      const closeBtn = document.querySelector('.js-close-btn');
+      const menu = document.querySelector('.js-menu');
+
+      closeBtn.addEventListener('click', function(){
+        menu.style.display = "none";
+      })
+    </script>
   </body>
 </html>
