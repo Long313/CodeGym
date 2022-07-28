@@ -93,17 +93,25 @@ html {
     list-style-type: none;
     display: inline-block;
     min-width: 160px;
-    padding-bottom: 8px;
     color: #fff;
 }
 
 #header .side-nav .list-items li {
-    padding: 8px 16px; 
+    line-height: 48px;
 }
 
 #header .side-nav .list-items li:hover {
     background-color: rgb(16,126,100);
 }
+
+#header .list-items li a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
 #banner {
     background: linear-gradient(180deg,rgba(0, 0, 0, 0.2),rgba(16,126,100,0.9)) ,url("../img/banner2.webp");
     background-size: 100%;
@@ -430,9 +438,8 @@ html {
     text-decoration: none;
 } 
 
-#footer #social a:hover i{
+#footer #social a i:hover {
     color: red;
-    display: inline-block;
 }
 
 #footer #social p {

@@ -16,16 +16,16 @@
           <a href="#">BARBER</a>
         </div>
         <div id="menu-header">
-          <div class="menu-icon">
+          <div class="menu-icon js-menu-icon">
             <i class="ti-menu"></i>
             <div class="side-nav js-menu">
               <i class="close-icon ti-close js-close-btn"></i>
               <ul class="list-items">
-                <li>Home</li>
-                <li>Features</li>
-                <li>Service</li>
-                <li>Testimonial</li>
-                <li>Meet us</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#testimonial">Testimonial</a></li>
+                <li><a href="#footer">Meet us</a></li>
               </ul>
             </div>
           </div>
@@ -171,9 +171,18 @@
     <script>
       const closeBtn = document.querySelector('.js-close-btn');
       const menu = document.querySelector('.js-menu');
+      const menuIcon = document.querySelector('.js-menu-icon');
 
       closeBtn.addEventListener('click', function(){
         menu.style.display = "none";
+      }
+      )
+      menuIcon.addEventListener('mouseenter',function(){
+        menu.style.display = "block";
+      })
+
+      menuIcon.addEventListener('click',function(){
+        menu.classList.add("menu-reponsive");
       })
     </script>
   </body>
